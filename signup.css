@@ -33,16 +33,13 @@ input[type=text]:focus, input[type=password]:focus {
     padding: 13px;
 }
 body{
-    color: #004BBA;
+    color: #5F9F9F;
     font-size: 25px;
     background-color: white;
 }
-.cancelbtn{
-    background-color: red;
-   
-}
-.signupbtn{
-    background-color: green;
+
+.signupbtn, .cancelbtn{
+    background-color: #5F9F9F;
 }
 button {
     padding: 14px 20px;
