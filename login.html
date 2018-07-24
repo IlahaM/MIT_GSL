@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <form>
+    <form action="login.php" method="post">
         <div class="container">
         
         <label><b>Email</b></label><br>
@@ -15,26 +15,13 @@
         
         <label><b>Password</b></label><br>
         <input type="password" placeholder="Password" name="password" required>  <br>
-            
-        <input type="radio" name="position" value="student"> &nbsp; <b>Student</b>
-        &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-        <input type="radio" name="position" value="tutor">&nbsp; <b>Tutor</b>  <br>
-         
+       
         <a href="signup.html">No account? Sign up</a>
             
-        <div class="clearfix">
-        <button type="button" class="cancelbtn">Cancel</button>&nbsp; &nbsp;&nbsp; &nbsp;   
-        <button type="submit" class="signupbtn">Log in</button><br>
+        <div class="clearfix"> 
+        <button type="submit" class="signupbtn" name="login">Log in</button><br>
         </div>
-            
-
-        
-    
-
-    
-
-    
-    
+               
 </form>    
     
 
