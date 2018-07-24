@@ -1,0 +1,176 @@
+.menu1{
+    float: left;
+    margin-left: 3%;
+    padding-top: 1%;
+    
+    
+}
+
+body{
+     /* background-image: url("student.jpg");
+     background-repeat: no-repeat;
+    background-size: 100% 20%; */
+    background-color: #edeff0;
+    
+   font-family: Arial;
+    
+}
+img{
+    float: left;
+   
+}
+p {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+#profileimg{
+     border-radius: 50%;
+    height: 25%;
+}
+
+.review {
+
+  border: none;
+  outline: 0;
+  display: table-footer-group;
+  padding: 8px;
+ /** color: mistyrose; **/
+ /** background-color: forestgreen; **/
+  text-align: left;
+  cursor: pointer;
+  width: 50%;
+  font-size: 18px;
+    color:#00bfe7;
+}
+
+#lang{
+    margin-top: 40%;
+    border-radius: 5px;
+}
+#search{
+    height: 5%;
+    margin-top: 1%;
+}
+ 
+#sign, #login{
+    background-color: #00bfe7;
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5%;
+
+}
+#login{
+    padding: 15px 25px;
+}
+
+.menu{
+     overflow: hidden;
+     box-shadow: 0 10px 11px -4px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+h1{
+    color: #00bfe7;
+    }
+   
+
+.title {
+  color: deepskyblue;
+  font-size: 20px;
+     word-wrap: break-word;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.checked {
+    color: orange;
+}
+
+
+
+.card {
+ /* box-shadow: 0 20px 20px 20px rgba(0, 0, 0, 0.2);*/
+  font-family: sans-serif;
+    max-width: 9%;
+padding-right: 3%;
+padding-left: 3%;
+   margin-top:3%;
+    margin-left: 11%;
+    padding-bottom: 1%;
+  
+   
+}
+
+.info{
+    margin-top: 3%;
+    margin-left: 5%;
+    word-wrap: break-word;
+    max-width: 25%;
+    padding: 3%;
+   
+}
+.container{
+   display: flex;
+}
+
+.contact{
+    position: absolute;
+    margin-top: 2%;
+    
+    
+    
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+#msg{
+   
+    
+    margin-top: 4%;
+   background-color: #edeff0;
+    color: black;
+    border: 2px solid #00bfe7;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+
+    
+}
+
+.video{
+    margin-top: 5%;
+    margin-left: 9%;
+   
+}
+#scimg{
+    margin-top: 2%;
+    width: 70%;
+}
+
+.posts{
+    font-size: 14px;
+font-weight: normal;
+resize: none;
+overflow-y: scroll;
+    margin-left: 15%;
+    
+}
+
+#post2{
+    margin-top: 3%;
+}
