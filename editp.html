@@ -1,0 +1,333 @@
+<html>
+   <head>
+      <title>The Materialize Form Example</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+      <link rel = "stylesheet"
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel = "stylesheet"
+         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+          <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+<meta charset=utf-8 />
+     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+        
+      </script>
+       <link rel="stylesheet" type="text/css" href="editprofile.css">
+       
+       
+   </head>
+   
+   <body class = "container">  
+       <div class ="menu" id="logo">
+        <div class = "menu1">
+         <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_trulli"> <img src="log.webp" alt="Trulli" width="30%" height="5%"></a> 
+        </div>
+        
+      <div class = "menu1">
+        <form action="">
+            
+      <input type="text" placeholder="Search.." name="search" size="90%" id="search" input-field col s6>
+     
+           
+    </form>
+        </div>
+        
+        <div class="menu1">
+            <select name="lang" id="lang">
+           <option value="eng">eng</option>
+        <option value="az">az</option>
+                          <option value="rus">rus</option>
+ </select>
+            </div>
+       <div class = "menu1">
+        <button id="sign">Sign Up</button>
+        </div>
+        
+        <div class = "menu1">
+        <button id="login">Login</button>
+        </div>
+        
+        </div>
+       
+       
+        <div class="prof">
+            
+              <div class="text-center">
+                  <img src="http://www.personalbrandingblog.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640-300x300.png" class="avatar img-circle" alt="avatar" id="profileimg">
+           </div>
+          <div class="text-center">
+             <input type="file" class="form-control" onchange="readURL(this);" >
+            </div>
+                       
+      
+     
+
+       </div>
+       
+       
+       
+      <div class = "row">
+         <form class = "col s12">
+            <div class = "row">
+               <div class = "input-field col s6">
+                  <i class = "material-icons prefix">account_circle</i>
+                  <input placeholder = "Username" value = "" id = "name"
+                     type = "text" class = "active validate" required />
+                  <label for = "name">Name Surname</label>
+               </div>
+               
+               <div class = "input-field col s6">      
+                  <label for = "password">Education</label>
+                  <input id = "password" type = "number" placeholder = "Education"
+                     class = "validate" required />          
+               </div>
+            </div>
+            
+            <div class = "row">
+               <div class = "input-field col s12">
+                  <input placeholder = "Email" id = "email" type = "email"
+                     class = "validate">
+                  <label for = "email">Email</label>
+               </div>
+            </div>
+             
+              <div class = "row">
+               <div class = "input-field col s12">
+                  <input placeholder = "Phone" value="+994" id = "comments"
+                     type = "number" />
+                  <label for = "comments">Phone</label>
+               </div>
+            </div>
+             
+              <div class = "row">
+               <div class = "input-field col s12">
+                  <input placeholder = "Location" id="searchTextField"
+                     type = "text" />
+                  <label for = "comments">Location</label>
+               </div>
+            </div>
+             
+             
+             
+             <div class="">
+            
+             <form action="https://upload.embed.ly/1/video?key=YOUR_API_KEY" method="POST" enctype="multipart/form-data" name="upload_form">
+  <div id="upload-button" class="button">Upload Video</div>
+  <div id="upload-input">
+    <input id="video_file" name="video_file" type="file">
+  </div>
+</form>
+<div class="url-display"></div>
+<div class="embed-code"></div>
+<div class="video-display"></div>
+<img id="loader" src="https://i.imgur.com/s4Z4mdr.gif">
+                       
+      
+     
+
+       </div>
+            
+            <div class = "row">
+               <div class = "input-field col s12">
+                  <i class = "material-icons prefix">mode_edit</i>
+                  <textarea id = "address" class = "materialize-textarea"></textarea>
+                  <label for = "address">Bio</label>
+               </div>
+            </div>
+             
+              <div class = "row">
+               <div class = "input-field col s12">
+                  <i class = "material-icons prefix">mode_edit</i>
+                  <textarea id = "address" class = "materialize-textarea"></textarea>
+                  <label for = "address">Experience</label>
+               </div>
+            </div>
+            
+            <div class = "row">
+               <div class = "input-field col s12">
+                  <input placeholder = "Price" id = "comments"
+                     type = "number" />
+                  <label for = "comments">Price</label>
+               </div>
+            </div>
+            
+            <div class = "row">
+               <div class = "input-field col s12">
+                  <p>Methodology: </p> 
+                  <p>
+                     <input id = "married" type = "checkbox" />
+                     <label for = "married">Group</label>
+                  </p>
+                  
+                  <p>
+                     <input id = "single" type = "checkbox" class = "filled-in" />
+                     <label for = "single">Individual</label>
+                  </p>
+                  
+                 
+               </div>
+            </div>
+            
+            <div class = "row">
+               <div class = "input-field col s12">
+                   <p>Gender:</p>
+                   <p>
+                     <input id = "male" type = "radio" name = "gender"
+                        value = "male"  />
+                     <label for = "male">Male</label>
+                  </p>
+                  
+                  <p>
+                     <input id = "female" type = "radio" name = "gender"
+                        value = "female" />
+                     <label for = "female">Female</label>
+                  </p>
+                  
+                 
+               </div>
+            </div>           
+         </form>       
+      </div>
+       
+       <script>
+       function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#profileimg')
+                    .attr('src', e.target.result)
+                    .width(150)
+                    .height(200);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+           
+           
+       
+       </script>
+       <script>
+       
+       function initialize() {
+  var input = document.getElementById('searchTextField');
+  new google.maps.places.Autocomplete(input);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+       </script>
+       
+       <script>
+       var emb_key = "YOUR_API_KEY";
+
+$(document).ready(function() {
+
+  // Connect the styled button with the form input. The input is hidden. This is done in order to have a custom embed button. 
+  $("#upload-button").click(function(e) {
+    $('#video_file').click();
+  })
+
+  // Once the video file is added, display the progress UI and submit the form for upload.
+  $("#video_file").change(function(e) {
+    $("#loader").css('display', "block");
+    $("#progress-percent").css('display', "block");
+    $("form[name='upload_form']").submit();
+    e.preventDefault();
+  })
+
+  // The sumbit function makes a post request. By default this replaces the page with the response, which is the JSON response after the post request. To stay on the same page the ajax request requires some more information.
+  $("form[name='upload_form'").submit(function(e) {
+    e.preventDefault();
+    var fd = new FormData($("form")[0]);
+    $.ajax({
+      url: $(this).attr('action'),
+      data: fd,
+      processData: false,
+      contentType: false,
+      crossDomain: true,
+      headers: {
+        'Access-Control-Allow-Origin': '*'
+      },
+      type: 'POST',
+      success: function(data, textStatus, xhr) {
+        // On receiving the response, update the UI with the embed code and URL of the video
+        successText(data);
+
+        //Query the status endpoint 
+        var call = "https://upload.embed.ly/1/status?key=" + emb_key + "&video_id=" + data.video_id;
+
+        //Poll status endpoint until video is processed
+        pollForFinished(call, function(){renderIframe(data);});
+      },
+      error: function(XMLHttpRequest, textStatus, errorThrown) {
+        console.log("Upload Failed for video: " + errorThrown);
+      },
+      xhr: function() {
+        //Monitor and display the percentage uploaded
+        var xhr = new window.XMLHttpRequest();
+        xhr.upload.addEventListener("progress", function(evt) {
+          if (evt.lengthComputable) {
+            var percentComplete = (evt.loaded / evt.total) * 100.0;
+            var text = percentComplete.toFixed(2) + "% uploaded."
+            $(".video-display").html('<p>' + text + '</p>');
+          }
+        }, false);
+        return xhr;
+      }
+    });
+  });
+});
+
+var successText = function(data) {
+  $("#upload-button").css('display', 'none');
+  $(".url-display").html("<h1>URL</h1>");
+  $(".embed-code").html("<h1>Embed Code</h1><p>You can copy and paste this embed code while the video processes.</p>");
+  $('.url-display').append("<p><a target='_blank' href='" + data.url + "'>" + data.url + "</a></p>")
+  $(".embed-code").append(
+    "<textarea name='textarea' rows='7' cols='50'>" + data.html + "</textarea>");
+  $(".video-display").html("<h1>Video</h1><p>The video is currently processing and will display momentarily.</p>");
+}
+
+var renderIframe = function(data) {
+  $("#loader").css('display', "none");
+  $("#progress-percent").css('display', "none");
+  $(".video-display").html('<h1>Video</h1><p>' + data.html + '</p>');
+};
+
+
+var checkProcessed = function(_call, cb) {
+  $.ajax({
+    url: _call,
+    type: 'GET',
+    success: function(d) {
+      cb(d);
+    },
+    error: function(d) {
+      console.log('error!' + JSON.stringify(d));
+      cb(d);
+    }
+  });
+}
+
+var pollForFinished = function(_call, cb) {
+  checkProcessed(_call, function(res) {
+    if (res.status == "finished") {
+      cb();
+    } 
+    else if(res.status == "cancelled" || res.status =="failed"){
+		   $(".video-display").html('<h1>Video</h1><p>' + res.status + '</p>');
+		}
+    else {
+      setTimeout(pollForFinished(_call,cb), 10000);
+    }
+  });
+}
+       
+       </script>
+   </body>   
+</html>
