@@ -12,16 +12,23 @@ body{
     background-size: 100% 20%; */
     background-color: #edeff0;
     
-   font-family: Arial;
+   
     
 }
+
+#check{
+    margin-left: 5.5%;
+}
+/**@media screen and (min-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
+}*/
 img{
     float: left;
    
 }
-p {
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-}
+
 
 #price{
     height: 4%;
@@ -43,9 +50,13 @@ p {
     border-style: ridge;
     border-radius: 4px;
     border-spacing: 5px;
-     padding-top: 2%;
-    padding-left:2%;
+     
+   
     
+}
+
+.prof{
+    margin-bottom: 8%;
 }
 
 .filter{
@@ -57,8 +68,13 @@ p {
 }
 #profileimg{
      border-radius: 50%;
-    height: 25%;
+   height:15%;
     
+    
+}
+
+.text-center{
+    display: flex;
 }
 
 .review {
@@ -83,6 +99,7 @@ p {
 #search{
     height: 5%;
     margin-top: 1%;
+    
 }
  
 #sign, #login{
@@ -98,6 +115,11 @@ p {
     border-radius: 5%;
 
 }
+
+.row{
+    margin-left: 4%;
+    margin-right:4%;
+}
 #login{
     padding: 15px 25px;
 }
@@ -106,6 +128,10 @@ p {
      overflow: hidden;
      box-shadow: 0 10px 11px -4px rgba(0, 0, 0, 0.2);
     background-color: white;
+    margin-bottom: 13%;
+    margin-left: -24%;
+    margin-right: -24%;
+   
 }
 h1{
     color: #00bfe7;
@@ -131,27 +157,25 @@ button:hover, a:hover {
 .card {
  /* box-shadow: 0 20px 20px 20px rgba(0, 0, 0, 0.2);*/
   font-family: sans-serif;
-    max-width: 9%;
-padding-right: 3%;
-padding-left: 3%;
+    
+
    margin-top:3%;
-    margin-left: 11%;
-    padding-bottom: 1%;
+   margin-bottom: 2%;
+   
+    
   
    
 }
 
 .info{
     margin-top: 3%;
-    margin-left: 5%;
+    margin-left: 10%;
     word-wrap: break-word;
     max-width: 25%;
     padding: 3%;
    
 }
-.container{
-   display: flex;
-}
+
 
 .contact{
     position: absolute;
@@ -209,7 +233,74 @@ overflow-y: scroll;
     margin-top: 3%;
 }
 
-
-* {
-  box-sizing: border-box;
+#video{
+    margin-left: 10%;
+    margin-top: 6%;
 }
+
+
+.button {
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: "museo-sans-fontspring", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  background-color: #00c7e4;
+  border-color: #009fb6;
+  color: #FFFFFF;
+  border-radius: 3px;
+  border-bottom: 1px solid #008194;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: background-color 300ms ease-out;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: "museo-sans-fontspring", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #565656;
+}
+
+#upload-input {
+  height: 0px;
+  width: 0px;
+  overflow: hidden
+}
+
+textarea {
+  background-color: #DDDDDD;
+  color: grey;
+}
+
+#loader {
+  display: none;
+}
+
+p {
+  font-family: "museo-sans-fontspring", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #525252;
+}
+
+a {
+  color: #00c7e4;
+  text-decoration: none;
+}
+
+
+
+
