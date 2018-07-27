@@ -21,8 +21,8 @@
        
    </head>
    
-   <body class = "container">  
-       <div class ="menu" id="logo">
+   <body class = "">  
+     <!--  <div class ="menu" id="logo">
         <div class = "menu1">
          <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_trulli"> <img src="log.webp" alt="Trulli" width="30%" height="5%"></a> 
         </div>
@@ -51,9 +51,48 @@
         <button id="login">Login</button>
         </div>
         
+        </div>-->
+       
+     <!-- <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>     
+    
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="sass.html"><i class="material-icons">
+                
+                </i></a></li>
+        <li><a href="sass.html">Sign up</a></li>
+        <li><a href="badges.html">Login</a></li>
+        
+      </ul>
+    </div>
+  </nav>-->
+       
+      <nav class="white">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Logo</a>   
+            <ul class="hide-on-med-and-down right">               
+                <li>    
+                   <div class="center row">
+                      <div class="col s12 " >
+                        <div class="" id="">
+                          <div class="input-field col s6 s12">
+                            <i class="material-icons prefix">search</i>
+                            <input type="text" placeholder="search" id="" class="" >
+                            </div>
+                          </div>
+                        </div>
+                      </div>          
+                  </li>                     
+                <li><a href="sass.html" class="">Sass</a></li>
+                <li><a href="badges.html" class="">Components</a></li>
+                <li><a href="collapsible.html" class="">JavaScript</a></li>
+            </ul>
         </div>
+      </nav> 
+        
        
-       
+       <div class = "container">
         <div class="prof">
             
               <div class="text-center">
@@ -70,6 +109,8 @@
        
        
        
+       
+      
       <div class = "row">
          <form class = "col s12">
             <div class = "row">
@@ -81,13 +122,28 @@
                </div>
                
                <div class = "input-field col s6">      
-                  <label for = "password">Education</label>
-                  <input id = "password" type = "number" placeholder = "Education"
+                  <label for = "name">Education</label>
+                  <input id = "comments" type = "text" placeholder = "Education"
+                     class = "validate" required />          
+               </div>
+            </div>
+             
+             <div class = "row">
+               <div class = "input-field col s6">
+                  <input placeholder = "Email" value = "" id = "email"
+                     type = "email" class = "active validate" required />
+                  <label for = "email">Email</label>
+               </div>
+               
+               <div class = "input-field col s6">      
+                  <label for = "phone">Phone</label>
+                  <input id = "comments" type = "number" placeholder = "Phone"
                      class = "validate" required />          
                </div>
             </div>
             
-            <div class = "row">
+            
+           <!-- <div class = "row">
                <div class = "input-field col s12">
                   <input placeholder = "Email" id = "email" type = "email"
                      class = "validate">
@@ -101,15 +157,29 @@
                      type = "number" />
                   <label for = "comments">Phone</label>
                </div>
+            </div>-->
+             
+               <div class = "row">
+               <div class = "input-field col s6">
+                  <input placeholder = "Location" value = "" id = "searchTextField"
+                     type = "text" class = "active validate" required />
+                  <label for = "comments">Location</label>
+               </div>
+               
+               <div class = "input-field col s6">      
+                  <label for = "comments">Price</label>
+                  <input id = "comments" type = "number" placeholder = "Price"
+                     class = "validate" required />          
+               </div>
             </div>
              
-              <div class = "row">
+             <!-- <div class = "row">
                <div class = "input-field col s12">
-                  <input placeholder = "Location" id="searchTextField"
+                  <input placeholder = "Location" id=""
                      type = "text" />
                   <label for = "comments">Location</label>
                </div>
-            </div>
+            </div>-->
              
              
              
@@ -138,14 +208,16 @@
                   <label for = "address">Bio</label>
                </div>
             </div>
-		 
-		 <div class = "row">
+             
+               
+            <div class = "row">
                <div class = "input-field col s12">
                   <i class = "material-icons prefix">mode_edit</i>
                   <textarea id = "address" class = "materialize-textarea"></textarea>
                   <label for = "address">Expertise</label>
                </div>
             </div>
+             
              
               <div class = "row">
                <div class = "input-field col s12">
@@ -155,13 +227,13 @@
                </div>
             </div>
             
-            <div class = "row">
+         <!--   <div class = "row">
                <div class = "input-field col s12">
                   <input placeholder = "Price" id = "comments"
                      type = "number" />
                   <label for = "comments">Price</label>
                </div>
-            </div>
+            </div>-->
             
             <div class = "row">
                <div class = "input-field col s12">
@@ -200,6 +272,7 @@
             </div>           
          </form>       
       </div>
+            </div>
        
        <script>
        function readURL(input) {
