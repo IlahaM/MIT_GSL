@@ -6,18 +6,17 @@
          href = "https://fonts.googleapis.com/icon?family=Material+Icons">
       <link rel = "stylesheet"
          href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-       <link rel="stylesheet" type="text/css" href="editprofile.css">
-       <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
-       <script type = "text/javascript"
+      <script type = "text/javascript"
          src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
-       <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
-          
-<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"> </script>
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+          <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
-
+<meta charset=utf-8 />
      <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+        
+      </script>
+       <link rel="stylesheet" type="text/css" href="editprofile.css">
        
        
    </head>
@@ -28,7 +27,7 @@
          <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_trulli"> <img src="log.webp" alt="Trulli" width="30%" height="5%"></a> 
         </div>
         
-      <div class = "menu1"
+      <div class = "menu1">
         <form action="">
             
       <input type="text" placeholder="Search.." name="search" size="90%" id="search" input-field col s6>
@@ -69,7 +68,7 @@
     </div>
   </nav>-->
        
-    <!--<nav class="white">
+      <nav class="white">
         <div class="nav-wrapper">
           <a href="#" class="brand-logo">Logo</a>   
             <ul class="hide-on-med-and-down right">               
@@ -90,30 +89,17 @@
                 <li><a href="collapsible.html" class="">JavaScript</a></li>
             </ul>
         </div>
-      </nav>-->
+      </nav> 
+        
        
-       <nav>
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Logo</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
-      </ul>
-    </div>
-  </nav>
-          
+       
+       
+       
+       
       
-       
-       <div class = "container">
+      <div class = "row">
+         <form class = "col s12" action="editp.php" method="post">
+		 <div class = "container">
         <div class="prof">
             
               <div class="text-center">
@@ -128,12 +114,6 @@
 
        </div>
        
-       
-       
-       
-      
-      <div class = "row">
-         <form class = "col s12">
             <div class = "row">
                <div class = "input-field col s6">
                   <i class = "material-icons prefix">account_circle</i>
@@ -145,21 +125,21 @@
                <div class = "input-field col s6">      
                   <label for = "name">Education</label>
                   <input id = "comments" type = "text" placeholder = "Education"
-                     class = "validate" required />          
+                    name="education" class = "validate" required />          
                </div>
             </div>
              
              <div class = "row">
                <div class = "input-field col s6">
                   <input placeholder = "Email" value = "" id = "email"
-                     type = "email" class = "active validate" required />
+                    name="email" type = "email" class = "active validate" required />
                   <label for = "email">Email</label>
                </div>
                
                <div class = "input-field col s6">      
                   <label for = "phone">Phone</label>
                   <input id = "comments" type = "number" placeholder = "Phone"
-                     class = "validate" required />          
+                    name="phone" class = "validate" required />          
                </div>
             </div>
             
@@ -183,13 +163,13 @@
                <div class = "row">
                <div class = "input-field col s6">
                   <input placeholder = "Location" value = "" id = "searchTextField"
-                     type = "text" class = "active validate" required />
+                     type = "text" name="location" class = "active validate" required />
                   <label for = "comments">Location</label>
                </div>
                
                <div class = "input-field col s6">      
                   <label for = "comments">Price</label>
-                  <input id = "comments" type = "number" placeholder = "Price"
+                  <input id = "comments" type = "number" name="price" placeholder = "Price"
                      class = "validate" required />          
                </div>
             </div>
@@ -225,7 +205,7 @@
             <div class = "row">
                <div class = "input-field col s12">
                   <i class = "material-icons prefix">mode_edit</i>
-                  <textarea id = "address" class = "materialize-textarea"></textarea>
+                  <textarea id = "address" class = "materialize-textarea" name="bio" required></textarea>
                   <label for = "address">Bio</label>
                </div>
             </div>
@@ -234,7 +214,7 @@
             <div class = "row">
                <div class = "input-field col s12">
                   <i class = "material-icons prefix">mode_edit</i>
-                  <textarea id = "address" class = "materialize-textarea"></textarea>
+                  <textarea id = "address" class = "materialize-textarea" name="expertise" required></textarea>
                   <label for = "address">Expertise</label>
                </div>
             </div>
@@ -243,7 +223,7 @@
               <div class = "row">
                <div class = "input-field col s12">
                   <i class = "material-icons prefix">mode_edit</i>
-                  <textarea id = "address" class = "materialize-textarea"></textarea>
+                  <textarea id = "address" class = "materialize-textarea" name="experience" required></textarea>
                   <label for = "address">Experience</label>
                </div>
             </div>
@@ -260,13 +240,13 @@
                <div class = "input-field col s12">
                   <p>Methodology: </p> 
                   <p>
-                     <input id = "married" type = "checkbox" />
-                     <label for = "married">Group</label>
+                     <input id = "group" type = "checkbox" name="group"/>
+                     <label for = "group">Group</label>
                   </p>
                   
                   <p>
-                     <input id = "single" type = "checkbox" class = "filled-in" />
-                     <label for = "single">Individual</label>
+                     <input id = "indiv" type = "checkbox" name="indiv"/>
+                     <label for = "indiv">Individual</label>
                   </p>
                   
                  
@@ -290,27 +270,14 @@
                   
                  
                </div>
-            </div> 
-             
-             
-            <!-- <div class="">
-            
-             <form action="" name="submit">
-  <div id="submit-button" class="button">Submit</div>
- 
-</form>
+            </div>  
 
-      
-       </div>-->
-             
-             <button class="waves-effect waves-light btn-large">
-             Submit
-             </button>
+ <button class="waves-effect waves-light btn-large" type="submit" name="save">
+             Save
+             </button>			
          </form>       
       </div>
             </div>
-       
-        
        
        <script>
        function readURL(input) {
@@ -448,14 +415,5 @@ var pollForFinished = function(_call, cb) {
 }
        
        </script>
-       
-     
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
- <script>
-        $(document).ready(function(){
-    $(".button-collapse").sideNav();
-  });
-       </script>
-     
    </body>   
 </html>
