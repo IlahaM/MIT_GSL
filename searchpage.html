@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      
+      <link rel="stylesheet" src="style.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      
+      <script type="text/javascript">
+        function populate1(s1,s2){
+            var s1 = document.getElementById(s1);
+            var s2 = document.getElementById(s2);    
+            s2.innerHTML = "";
+            
+            if(s1.value == "Exams"){
+                var optionArray = ["|","SATE|SAT English","SATM|SAT Math","IELTS|IELTS","TOEFL|TOEFL","YOS|YOS"];
+            } 
+            else if(s1.value == "TQDK"){
+                var optionArray = ["|","Math|Math","Azerbaijani|Azerbaijani","Russian|Russian","English|English","Geography|Geography","Chemistry|Chemistry","Physics|Physics","Biology|Biology","History|History",];
+                
+	        }
+            else if(s1.value == "Languages"){
+                var optionArray = ["|","Azerbaijani|Azerbaijani","Russian|Russian","English|English","Spanish|Spanish","French|French","Arabic|Arabic","Chinese|Chinese"];
+                
+	        }
+            else if(s1.value == "Coding"){
+                var optionArray = ["|","Web|HTML,CSS","JS|JS","SQL|SQL","Java|Java","C/C++|C/C++","C#|C#","Python|Python"];
+                
+	        }
+            else if(s1.value == "Self-development"){
+                var optionArray = ["|","Confidence|Confidence","Motivation|Motivation","Communication|Communication","Leadership|Leadership","Efficiency|Efficiency ","Relationships|Relationships","Fitness|Fitness","Religion|Religion",""];
+                
+	        }
+            else if(s1.value == "Arts"){
+                var optionArray = ["|","Architecture|Architecture","Calligraphy|Calligraphy","Ceramics|Ceramics","Design|Design","Folk|Folk","Jewellery|Jewellery","Metalwork|Metalwork","Painting|Painting","Photography|Photography","Sand|Sand","Video|Video"];
+	        }
+            else if(s1.value == "Music"){
+                var optionArray = ["|","Guitar|Guitar(Classical)","Electroguitar|Electroguitar","Keyboard|Keyboard","Piano|Piano","Drums|Drums","Violin|Violin","Flute|Flute"];
+	        }
+            else if(s1.value == "Sports"){
+                var optionArray = ["|","Football|Football","Futsal|Futsal","Volleyball|Volleyball","Wrestling|Wrestling","Judo|Judo","Chess|Chess"];
+                
+	        }
+            
+            else if(s1.value == "Dancing"){
+                var optionArray = ["|","Azerbaijani|Azerbaijani","Ballet|Ballet","HipHop|HipHop","Modern|Modern","Latin|Latin","Lezginka|Lezginka"];
+                
+	        }
+            else if(s1.value == "Additional"){
+                var optionArray = ["|","Driving|Driving exam","Cooking|Cooking"];
+                
+	        }
+            
+            for(var option in optionArray){
+                var pair = optionArray[option].split("|");
+		        var newOption = document.createElement("option");
+                newOption.value = pair[0];
+                newOption.innerHTML = pair[1];
+                s2.options.add(newOption);
+            }
+
+        }
+        function populate2(s1,s2){
+            var s1 = document.getElementById(s1);
+            var s2 = document.getElementById(s2);    
+            s2.innerHTML = "";
+            
+            if(s1.value == "Baku"){
+                var optionArray = ["|","Binaqadi|Binaqadi","Nizami|Nizami","Narimanov|Narimanov","Nasimi|Nasimi","Pirallahi|Pirallahi","Qaradaq|Qaradaq","Sabunchu|Sabunchu","Surakhani|Surakhani","Sabail|Sabail","Khatai|Khatai","Khazar|Khazar","Yasamal|Yasamal"];
+            } 
+            else if(s1.value == "Sumqayit"){
+                var optionArray = ["Sumqayit|Sumqayit"];
+            } 
+            else if(s1.value == "Ganja"){
+                var optionArray = ["Ganja|Ganja"];
+            }
+            else if(s1.value == "Mingachevir"){
+                var optionArray = ["Mingachevir|Mingachevir"];
+            }
+            else if(s1.value == "Lankaran"){
+                var optionArray = ["Lankaran|Lankaran"];
+            }
+            else if(s1.value == "Shirvan"){
+                var optionArray = ["Shirvan|Shirvan"];
+            }
+            else if(s1.value == "Nakhchivan"){
+                var optionArray = ["Nakhchivan|Nakhchivan"];
+            }
+            
+            for(var option in optionArray){
+                var pair = optionArray[option].split("|");
+		        var newOption = document.createElement("option");
+                newOption.value = pair[0];
+                newOption.innerHTML = pair[1];
+                s2.options.add(newOption);
+            }
+
+        }
+        </script>
+      
+    </head>
+
+    <body>
+
+      <!--JavaScript at end of body for optimized loading-->
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+      
+        <nav>
+    <div class="nav-wrapper light grey darken-3">
+      <a href="#" class="brand-logo">Educator</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+     
+      <br><br>
+      <div class="container ">
+          <div class="row">
+              <div class=" col s10 offset-s1 z-depth-2" id="tutor_face">
+                  <div class=" col s4">
+                  <br/>
+                  <img id = "tutor_photo" class="responsive-img" src="https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1501700554000/photosp/262671e7-cb17-4ee1-8f5a-26f766c4a855/stock-photo-diverse-teacher-mentor-smiling-man-middle-school-educator-school-room-male-teacher-262671e7-cb17-4ee1-8f5a-26f766c4a855.jpg" alt="">
+                  
+                  
+                      
+                  </div>
+                  <div class="col s8">
+                        <div class="row">
+                           
+                            <div class="col s7">
+                              <div class="col s8">
+                                  <h5><b></b>Name Surname</h5>
+                              </div>
+                              <div class="col s4 "> <h5 class="light"><i class="material-icons orange-text ">star</i> 4.6</h5>
+                                
+                              </div>
+                              <br><br>
+                              
+                              <ul>
+                                  <li><b>Expertise:</b> <span class="card">Italian</span> <span class="card">Spanish</span> </li>
+                                  <br>
+                                  <li>
+                                      <b>Experience:</b> Lorem ipsum dolor sit amet.
+                                  </li>
+                                  <br>
+                                  <li ><b>Bio: </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis mollitia quibusdam ad ex animi, totam facilis consequuntur nobis optio magnam.</li>
+                              </ul>
+                          </div>
+                            <br>
+                          <div class="card col s5 ">
+                               
+                                <div class="center"><h5>Price:<b>8$/ho</b></h5></div>
+                                <div class="center">
+                                    <ul>
+                                        <li>Location:</li>
+                                        <li>Yasamal,Baku</li>
+                                        <li>Azerbaijan</li>
+                                    </ul>
+                                </div>
+                            <div class="center">
+                                <button class="btn-large waves-effect waves-light ">
+                              <i class="material-icons left">message</i>
+                              Message me</button>
+                            </div>   
+                              <br>
+                          
+                          </div>
+                            
+                        </div >
+                          
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class=" col s10 offset-s1 z-depth-2" id="tutor_face">
+                  <div class=" col s4">
+                  <br/>
+                  <img id = "tutor_photo" class="responsive-img" src="https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1501700554000/photosp/262671e7-cb17-4ee1-8f5a-26f766c4a855/stock-photo-diverse-teacher-mentor-smiling-man-middle-school-educator-school-room-male-teacher-262671e7-cb17-4ee1-8f5a-26f766c4a855.jpg" alt="">
+                  
+                  
+                      
+                  </div>
+                  <div class="col s8">
+                        <div class="row">
+                           
+                            <div class="col s7">
+                              <div class="col s8">
+                                  <h5><b></b>Name Surname</h5>
+                              </div>
+                              <div class="col s4 "> <h5 class="light"><i class="material-icons orange-text ">star</i> 4.6</h5>
+                                
+                              </div>
+                              <br><br>
+                              
+                              <ul>
+                                  <li><b>Expertise:</b> <span class="card">Italian</span> <span class="card">Spanish</span> </li>
+                                  <br>
+                                  <li>
+                                      <b>Experience:</b> Lorem ipsum dolor sit amet.
+                                  </li>
+                                  <br>
+                                  <li ><b>Bio: </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis mollitia quibusdam ad ex animi, totam facilis consequuntur nobis optio magnam.</li>
+                              </ul>
+                          </div>
+                            <br>
+                          <div class="card col s5 ">
+                               
+                                <div class="center"><h5>Price:<b>8$/ho</b></h5></div>
+                                <div class="center">
+                                    <ul>
+                                        <li>Location:</li>
+                                        <li>Yasamal,Baku</li>
+                                        <li>Azerbaijan</li>
+                                    </ul>
+                                </div>
+                            <div class="center">
+                                <button class="btn-large waves-effect waves-light ">
+                              <i class="material-icons left">message</i>
+                              Message me</button>
+                            </div>   
+                              <br>
+                          
+                          </div>
+                            
+                        </div >
+                          
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class=" col s10 offset-s1 z-depth-2" id="tutor_face">
+                  <div class=" col s4">
+                  <br/>
+                  <img id = "tutor_photo" class="responsive-img" src="https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1501700554000/photosp/262671e7-cb17-4ee1-8f5a-26f766c4a855/stock-photo-diverse-teacher-mentor-smiling-man-middle-school-educator-school-room-male-teacher-262671e7-cb17-4ee1-8f5a-26f766c4a855.jpg" alt="">
+                  
+                  
+                      
+                  </div>
+                  <div class="col s8">
+                        <div class="row">
+                           
+                            <div class="col s7">
+                              <div class="col s8">
+                                  <h5><b></b>Name Surname</h5>
+                              </div>
+                              <div class="col s4 "> <h5 class="light"><i class="material-icons orange-text ">star</i> 4.6</h5>
+                                
+                              </div>
+                              <br><br>
+                              
+                              <ul>
+                                  <li><b>Expertise:</b> <span class="card">Italian</span> <span class="card">Spanish</span> </li>
+                                  <br>
+                                  <li>
+                                      <b>Experience:</b> Lorem ipsum dolor sit amet.
+                                  </li>
+                                  <br>
+                                  <li ><b>Bio: </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis mollitia quibusdam ad ex animi, totam facilis consequuntur nobis optio magnam.</li>
+                              </ul>
+                          </div>
+                            <br>
+                          <div class="card col s5 ">
+                               
+                                <div class="center"><h5>Price:<b>8$/ho</b></h5></div>
+                                <div class="center">
+                                    <ul>
+                                        <li>Location:</li>
+                                        <li>Yasamal,Baku</li>
+                                        <li>Azerbaijan</li>
+                                    </ul>
+                                </div>
+                            <div class="center">
+                                <button class="btn-large waves-effect waves-light ">
+                              <i class="material-icons left">message</i>
+                              Message me</button>
+                            </div>   
+                              <br>
+                          
+                          </div>
+                            
+                        </div >
+                          
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="s12 center "><ul class="pagination">
+    <li class="disabled"><a href="#!"><i class="material-icons t">chevron_left</i></a></li>
+    <li class="active black"><a href="#!">1</a></li>
+    <li class="waves-effect"><a href="#!">2</a></li>
+    <li class="waves-effect"><a href="#!">3</a></li>
+    <li class="waves-effect"><a href="#!">4</a></li>
+    <li class="waves-effect"><a href="#!">5</a></li>
+    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+  </ul></div>
+      </div>
+      
+      <footer class="page-footer black">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+      
+    </body>
+  </html>
