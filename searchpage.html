@@ -1,271 +1,404 @@
 <!DOCTYPE html>
-  <html>
+<html>
     <head>
-      <!--Import Google Icon Font-->
-      
-      <link rel="stylesheet" src="main.css">
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+        <!--Import Google Icon Font-->
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      
-      <script type="text/javascript">
-        function populate1(s1,s2){
-            var s1 = document.getElementById(s1);
-            var s2 = document.getElementById(s2);    
-            s2.innerHTML = "";
-            
-            if(s1.value == "Exams"){
-                var optionArray = ["|","SATE|SAT English","SATM|SAT Math","IELTS|IELTS","TOEFL|TOEFL","YOS|YOS"];
-            } 
-            else if(s1.value == "TQDK"){
-                var optionArray = ["|","Math|Math","Azerbaijani|Azerbaijani","Russian|Russian","English|English","Geography|Geography","Chemistry|Chemistry","Physics|Physics","Biology|Biology","History|History",];
-                
-	        }
-            else if(s1.value == "Languages"){
-                var optionArray = ["|","Azerbaijani|Azerbaijani","Russian|Russian","English|English","Spanish|Spanish","French|French","Arabic|Arabic","Chinese|Chinese"];
-                
-	        }
-            else if(s1.value == "Coding"){
-                var optionArray = ["|","Web|HTML,CSS","JS|JS","SQL|SQL","Java|Java","C/C++|C/C++","C#|C#","Python|Python"];
-                
-	        }
-            else if(s1.value == "Self-development"){
-                var optionArray = ["|","Confidence|Confidence","Motivation|Motivation","Communication|Communication","Leadership|Leadership","Efficiency|Efficiency ","Relationships|Relationships","Fitness|Fitness","Religion|Religion",""];
-                
-	        }
-            else if(s1.value == "Arts"){
-                var optionArray = ["|","Architecture|Architecture","Calligraphy|Calligraphy","Ceramics|Ceramics","Design|Design","Folk|Folk","Jewellery|Jewellery","Metalwork|Metalwork","Painting|Painting","Photography|Photography","Sand|Sand","Video|Video"];
-	        }
-            else if(s1.value == "Music"){
-                var optionArray = ["|","Guitar|Guitar(Classical)","Electroguitar|Electroguitar","Keyboard|Keyboard","Piano|Piano","Drums|Drums","Violin|Violin","Flute|Flute"];
-	        }
-            else if(s1.value == "Sports"){
-                var optionArray = ["|","Football|Football","Futsal|Futsal","Volleyball|Volleyball","Wrestling|Wrestling","Judo|Judo","Chess|Chess"];
-                
-	        }
-            
-            else if(s1.value == "Dancing"){
-                var optionArray = ["|","Azerbaijani|Azerbaijani","Ballet|Ballet","HipHop|HipHop","Modern|Modern","Latin|Latin","Lezginka|Lezginka"];
-                
-	        }
-            else if(s1.value == "Additional"){
-                var optionArray = ["|","Driving|Driving exam","Cooking|Cooking"];
-                
-	        }
-            
-            for(var option in optionArray){
-                var pair = optionArray[option].split("|");
-		        var newOption = document.createElement("option");
-                newOption.value = pair[0];
-                newOption.innerHTML = pair[1];
-                s2.options.add(newOption);
-            }
+        <link rel="stylesheet" src="main.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
 
-        }
-        function populate2(s1,s2){
-            var s1 = document.getElementById(s1);
-            var s2 = document.getElementById(s2);    
-            s2.innerHTML = "";
-            
-            if(s1.value == "Baku"){
-                var optionArray = ["|","Binaqadi|Binaqadi","Nizami|Nizami","Narimanov|Narimanov","Nasimi|Nasimi","Pirallahi|Pirallahi","Qaradaq|Qaradaq","Sabunchu|Sabunchu","Surakhani|Surakhani","Sabail|Sabail","Khatai|Khatai","Khazar|Khazar","Yasamal|Yasamal"];
-            } 
-            else if(s1.value == "Sumqayit"){
-                var optionArray = ["Sumqayit|Sumqayit"];
-            } 
-            else if(s1.value == "Ganja"){
-                var optionArray = ["Ganja|Ganja"];
-            }
-            else if(s1.value == "Mingachevir"){
-                var optionArray = ["Mingachevir|Mingachevir"];
-            }
-            else if(s1.value == "Lankaran"){
-                var optionArray = ["Lankaran|Lankaran"];
-            }
-            else if(s1.value == "Shirvan"){
-                var optionArray = ["Shirvan|Shirvan"];
-            }
-            else if(s1.value == "Nakhchivan"){
-                var optionArray = ["Nakhchivan|Nakhchivan"];
-            }
-            
-            for(var option in optionArray){
-                var pair = optionArray[option].split("|");
-		        var newOption = document.createElement("option");
-                newOption.value = pair[0];
-                newOption.innerHTML = pair[1];
-                s2.options.add(newOption);
-            }
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-        }
+        <script type="text/javascript">
+            function populate1(s1,s2){
+                var s1 = document.getElementById(s1);
+                var s2 = document.getElementById(s2);    
+                s2.innerHTML = "";
+
+                if(s1.value == "Exams"){
+                    var optionArray = ["|","SATE|SAT English","SATM|SAT Math","IELTS|IELTS","TOEFL|TOEFL","YOS|YOS"];
+                } 
+                else if(s1.value == "TQDK"){
+                    var optionArray = ["|","Math|Math","Azerbaijani|Azerbaijani","Russian|Russian","English|English","Geography|Geography","Chemistry|Chemistry","Physics|Physics","Biology|Biology","History|History",];
+
+                }
+                else if(s1.value == "Languages"){
+                    var optionArray = ["|","Azerbaijani|Azerbaijani","Russian|Russian","English|English","Spanish|Spanish","French|French","Arabic|Arabic","Chinese|Chinese"];
+
+                }
+                else if(s1.value == "Coding"){
+                    var optionArray = ["|","Web|HTML,CSS","JS|JS","SQL|SQL","Java|Java","C/C++|C/C++","C#|C#","Python|Python"];
+
+                }
+                else if(s1.value == "Self-development"){
+                    var optionArray = ["|","Confidence|Confidence","Motivation|Motivation","Communication|Communication","Leadership|Leadership","Efficiency|Efficiency ","Relationships|Relationships","Fitness|Fitness","Religion|Religion",""];
+
+                }
+                else if(s1.value == "Arts"){
+                    var optionArray = ["|","Architecture|Architecture","Calligraphy|Calligraphy","Ceramics|Ceramics","Design|Design","Folk|Folk","Jewellery|Jewellery","Metalwork|Metalwork","Painting|Painting","Photography|Photography","Sand|Sand","Video|Video"];
+                }
+                else if(s1.value == "Music"){
+                    var optionArray = ["|","Guitar|Guitar(Classical)","Electroguitar|Electroguitar","Keyboard|Keyboard","Piano|Piano","Drums|Drums","Violin|Violin","Flute|Flute"];
+                }
+                else if(s1.value == "Sports"){
+                    var optionArray = ["|","Football|Football","Futsal|Futsal","Volleyball|Volleyball","Wrestling|Wrestling","Judo|Judo","Chess|Chess"];
+
+                }
+
+                else if(s1.value == "Dancing"){
+                    var optionArray = ["|","Azerbaijani|Azerbaijani","Ballet|Ballet","HipHop|HipHop","Modern|Modern","Latin|Latin","Lezginka|Lezginka"];
+
+                }
+                else if(s1.value == "Additional"){
+                    var optionArray = ["|","Driving|Driving exam","Cooking|Cooking"];
+
+                }
+
+                for(var option in optionArray){
+                    var pair = optionArray[option].split("|");
+                    var newOption = document.createElement("option");
+                    newOption.value = pair[0];
+                    newOption.innerHTML = pair[1];
+                    s2.options.add(newOption);
+                }
+
+            }
+            function populate2(s1,s2){
+                var s1 = document.getElementById(s1);
+                var s2 = document.getElementById(s2);    
+                s2.innerHTML = "";
+
+                if(s1.value == "Baku"){
+                    var optionArray = ["|","Binaqadi|Binaqadi","Nizami|Nizami","Narimanov|Narimanov","Nasimi|Nasimi","Pirallahi|Pirallahi","Qaradaq|Qaradaq","Sabunchu|Sabunchu","Surakhani|Surakhani","Sabail|Sabail","Khatai|Khatai","Khazar|Khazar","Yasamal|Yasamal"];
+                } 
+                else if(s1.value == "Sumqayit"){
+                    var optionArray = ["Sumqayit|Sumqayit"];
+                } 
+                else if(s1.value == "Ganja"){
+                    var optionArray = ["Ganja|Ganja"];
+                }
+                else if(s1.value == "Mingachevir"){
+                    var optionArray = ["Mingachevir|Mingachevir"];
+                }
+                else if(s1.value == "Lankaran"){
+                    var optionArray = ["Lankaran|Lankaran"];
+                }
+                else if(s1.value == "Shirvan"){
+                    var optionArray = ["Shirvan|Shirvan"];
+                }
+                else if(s1.value == "Nakhchivan"){
+                    var optionArray = ["Nakhchivan|Nakhchivan"];
+                }
+
+                for(var option in optionArray){
+                    var pair = optionArray[option].split("|");
+                    var newOption = document.createElement("option");
+                    newOption.value = pair[0];
+                    newOption.innerHTML = pair[1];
+                    s2.options.add(newOption);
+                }
+
+            }
         </script>
-      
+
     </head>
 
     <body>
 
-        <nav>
-            <div class="nav-wrapper light grey darken-3">
-                <a href="#" class="brand-logo">Educator</a>
+        <nav class="row">
+            <div class="nav-wrapper light grey darken-3 col s12">
+                <a href="#" class="brand-logo col ">Educator</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">JavaScript</a></li>
+                    <li><a href="#"><button class="btn-large grey darken-1 waves-effect waves-light">Sign Up</button></a></li>
+                    <li><a href="#"><button class="btn-large grey darken-1 waves-effect waves-light">Login</button></a></li>
                 </ul>
             </div>
         </nav>
-     
-      <br><br>
-      <div class="container">
-          <div class="row">
-             <div class="card col s10 offset-s1 m4 l4 xl3 grey lighten-2 z-depth-3">
-                 <div>
-                     <h4> <i class="material-icons "> filter_list</i>Filters</h4>
-                     <div class="row">
-                        <form action="">
-                         <div class="col s12 "><i class="material-icons left"> style</i>Expertise
-                             <div class="input-field">
-                                 <select name="location_1" id="location_1" onchange="populate2(this.id,'location_2')">
-                                    <option value="" disabled selected>Choose your option</option>
-                                    <option value="Exams">Exams</option>
-                                    <option value="TQDK">TQDK</option>
-                                    <option value="Languages">Languages</option>
-                                    <option value="Arts">Arts</option>
-                                    <option value="Music">Music</option>
-                                    <option value="Sports">Sports</option>
-                                    <option value="Dancing">Additional</option>
-                                    <option value="Additional">Additional</option>
-                                 </select>
-                             </div>
-                             <div class="input-field">
-                                 <select name="location_2" id="location_2">
-                                 </select>
-                             </div>
-                          
-                         </div>
-                           
-                         <div class="col s12">Location
-                             <div class="input-field">
-                                 <select name="location_1" id="location_1" onchange="populate2(this.id,'location_2')">
-                                    <option value="" disabled selected>Choose your option</option>
-                                    <option value="Baku">Baku</option>
-                                    <option value="Sumqayit">Sumqayit</option>
-                                    <option value="Ganja">Ganja</option>
-                                    <option value="Mingachevir">Mingachevir</option>
-                                    <option value="Lankaran">Lankaran</option>
-                                    <option value="Shirvan">Shirvan</option>
-                                    <option value="	Nakhchivan">	Nakhchivan</option>
-                                 </select>
-                             </div>
-                             <div class="input-field">
-                                 <select name="location_2" id="location_2">
-                                 </select>
-                             </div>
-                         </div>
-                         <div class="col s12">Price
-                             <br><br>
-                         </div>
-                         <div class="col s12">Gender
-                            <div>
-                                 <div>
-                                     <label><input type="checkbox"><span>Male</span></label>
-                                 </div>
-                                 <div>
-                                     <label><input type="checkbox"><span>Female</span></label>
-                                 </div>
-                                
-                            </div>
-                            <br>
-                         </div>
-                         <div class="col s12">Methodology
-                             <div>
-                                 <label><input type="checkbox"><span>Individual</span></label>
-                             </div>
-                             <div>
-                                 <label><input type="checkbox"><span>In Groups</span></label>
-                             </div>  
-                             <br>
-                         </div>
-                         <div class="col center s10 offset-s1">
-                            <button class="btn-large waves-effect waves-light only-xl grey darken-3 ">
-                            <i class="material-icons left prefix">search</i>
-                            Search</button>
-                         </div>  
-                        </form>
-                     </div>
-                 </div>
-                 <div>
-                     
-                 </div>
-             </div>
-              <div class="col s12 m7 offset-m1 l7 offset-l1 xl-8 offset-xl0 z-depth-2 " id="tutor_face">
-                 <div class="row">
-                     <div class=" col s12 m4 l4 xl4">
-                      <br/>
-                        <img id = "tutor_photo" class="responsive-img" src="https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1501700554000/photosp/262671e7-cb17-4ee1-8f5a-26f766c4a855/stock-photo-diverse-teacher-mentor-smiling-man-middle-school-educator-school-room-male-teacher-262671e7-cb17-4ee1-8f5a-26f766c4a855.jpg" alt="">
-                        <h5>Name Surname</h5>
 
-                      <div class=" row "> 
-                        <div>
-                            <span class="light"><i class="material-icons orange-text ">star</i>4.6 </span>(12 reviews)
-                        </div>
-                      </div>
-                  </div>
-                  <div class="col s12 m5">
+        <div class="container">
+            <div class="row">
+               
+                <div class="col s10 offset-s1 m4 l3 xl3 grey lighten-2 z-depth-3">
+
+                    <div class="">
+                        <h4> <i class="material-icons "> filter_list</i>Filter</h4>
                         <div class="row">
-                           
-                            <div class="col s12">
-                              
-                              
-                              
-                              <ul>
-                                  <li><b>Expertise:</b> <span class="card">Italian</span> <span class="card">Spanish</span> </li>
-                                  <br>
-                                  <li>
-                                      <b>Experience:</b> Lorem ipsum dolor sit amet.
-                                  </li>
-                                  <br>
-                                  <li ><b>Bio: </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis mollitia quibusdam ad ex </li>
-                              </ul>
-                          </div>
-                            <br>
-                          
-                      </div>
-                      
-                  </div>
-                  <div class="card col s10 offset-s1 m3">
-                               
-                                <div class="center"><h5>Price:
-                                <b>8$/ho</b>
-                                </h5></div>
-                                <div class="center">
-                                    <ul>
-                                        <li>Location:</li>
-                                        <li>Yasamal,Baku</li>
-                                        <li>Azerbaijan</li>
-                                    </ul>
+                            <form action="">
+                                <div class="col s12 "><i class="material-icons left"> style</i>Expertise
+                                    <div class="input-field">
+                                        <select name="expertise_1" id="expertise_2" onchange="populate1(this.id,'location_2')">
+                                            <option value="" disabled selected>Choose your option</option>
+                                            <option value="Exams">Exams</option>
+                                            <option value="TQDK">TQDK</option>
+                                            <option value="Languages">Languages</option>
+                                            <option value="Arts">Arts</option>
+                                            <option value="Music">Music</option>
+                                            <option value="Sports">Sports</option>
+                                            <option value="Dancing">Additional</option>
+                                            <option value="Additional">Additional</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-field">
+                                        <select name="location_2" id="location_2">
+                                        </select>
+                                    </div>
+
                                 </div>
-                                <div class="center">
-                                    <button class="btn-large waves-effect waves-light only-xl">
-                                    <i class="material-icons left prefix">message</i>
-                                    Message me</button>
+
+                                <div class="col s12">Location
+                                    <div class="input-field">
+                                        <select name="location_1" id="location_1" onchange="populate2(this.id,'location_2')">
+                                            <option value="" disabled selected>Choose your option</option>
+                                            <option value="Baku">Baku</option>
+                                            <option value="Sumqayit">Sumqayit</option>
+                                            <option value="Ganja">Ganja</option>
+                                            <option value="Mingachevir">Mingachevir</option>
+                                            <option value="Lankaran">Lankaran</option>
+                                            <option value="Shirvan">Shirvan</option>
+                                            <option value="	Nakhchivan">	Nakhchivan</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-field">
+                                        <select name="location_2" id="location_2">
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col s12">Price
+
+                                    <br><br>
+                                </div>
+                                <div class="col s12">Gender
+                                    <div>
+                                        <div>
+                                            <label><input type="checkbox"><span>Male</span></label>
+                                        </div>
+                                        <div>
+                                            <label><input type="checkbox"><span>Female</span></label>
+                                        </div>
+
+                                    </div>
+                                    <br>
+                                </div>
+                                <div class="col s12">Methodology
+                                    <div>
+                                        <label><input type="checkbox"><span>Individual</span></label>
+                                    </div>
+                                    <div>
+                                        <label><input type="checkbox"><span>In Groups</span></label>
+                                    </div>  
+                                    <br>
+                                </div>
+                                <div class="col center s10 offset-s1">
+                                    <button class="btn-large waves-effect waves-light only-xl grey darken-3 ">
+                                        <i class="material-icons left prefix">search</i>
+                                        Search</button>
                                 </div>  
-                                <br>
+                            </form>
                         </div>
-          </div>
-                 </div>
-              </div>
-      </div>
-      
-      
-      
-          
-      
-      <div class="container">
-          <div class="s12 center ">
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+
+                <div class=" col s10 offset-s1 m2 offset-m6 l2 xl2 offset-l7 offset-xl7">
+                    <div class="col input-field multiple card z-depth-2">
+                        <b>Sort by:</b>
+                        <select name="expertise_1" id="expertise_2" >
+                            <option value="" disabled selected></option>
+                            <option value="Rating">Rating</option>
+                            <option value="Price">Price</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col s12 m7 offset-m1 l8 offset-l1 xl-8 offset-xl0">
+                    <div class="col s12  z-depth-2 " id="tutor_face">
+                    <div class=" col s12 m12 l4 xl4 ">
+                        <div class="col s6  m6 l12">
+                            <br class="show-on-large">
+
+                            <img id = "tutor_photo" class="responsive-img " src="tutor.jpeg" alt="">
+                        </div>
+                        <div class="col s6 m5 offset-m1 l12 center hide-on-large-only">
+                            <br class="hide-on-large-only">
+                            <h5 class="" >Amin Azimov</h5>
+                            <div class="">
+                                <i class="material-icons orange-text ">star</i> 4.5
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col s12 m7 l5">
+
+                        <div class="col s12 ">
+                            <div class="col s4 m5 offset-m1 l12 center hide-on-med-and-down">
+                                <h5 class="" >Amin Azimov</h5>
+                                <i class="material-icons orange-text ">star</i> 4.5
+                            </div>
+
+                            <ul>
+                                <li><b>Expertise:</b> <span class="card">Italian</span> <span class="card">Spanish</span> </li>
+                                <li>
+                                    <b>Experience:</b> Lorem ipsum dolor sit amet.
+                                </li>
+                                <li ><b>Bio: </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis mollitia quibusdam ad ex </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <br class="show-on-large">
+                    <div class="card col s12 m5 l3 right ">
+
+                        <div class="center"><h5>Price:
+                            <b>8$/ho</b>
+                            </h5></div>
+                        <div class="center">
+                            <ul>
+                                <li>Location:</li>
+                                <li>Yasamal,Baku</li>
+                                <li>Azerbaijan</li>
+                            </ul>
+                        </div>
+                        <div class="center">
+                            <button class="btn waves-effect waves-light only-xl">
+                                <i class="material-icons left hide-on-med-only hide-on-large-only">message</i>
+                                Message me</button>
+                            <br><br>
+                        </div>  
+                    </div>
+
+
+                </div>
+                <div class="col s12  z-depth-2 " id="tutor_face">
+                    <div class=" col s12 m12 l4 xl4 ">
+                        <div class="col s6  m6 l12">
+                            <br class="show-on-large">
+
+                            <img id = "tutor_photo" class="responsive-img " src="nigar.jpg" alt="">
+                        </div>
+                        <div class="col s6 m5 offset-m1 l12 center hide-on-large-only">
+                            <br class="hide-on-large-only">
+                            <h5 class="" >Nigar Mamedova</h5>
+                            <div class="">
+                                <i class="material-icons orange-text ">star</i> 4.5
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col s12 m7 l5">
+
+                        <div class="col s12 ">
+                            <div class="col s4 m5 offset-m1 l12 center hide-on-med-and-down">
+                                <h5 class="" >Nigar Mamedova</h5>
+                                <i class="material-icons orange-text ">star</i> 4.8
+                            </div>
+
+                            <ul>
+                                <li><b>Expertise:</b> <span class="card">Arabic</span> <span class="card">Persian</span> </li>
+                                <li>
+                                    <b>Experience:</b> Lorem ipsum dolor sit amet.
+                                </li>
+                                <li ><b>Bio: </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis mollitia quibusdam ad ex </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <br class="show-on-large">
+                    <div class="card col s12 m5 l3 right ">
+
+                        <div class="center"><h5>Price:
+                            <b>9$/ho</b>
+                            </h5></div>
+                        <div class="center">
+                            <ul>
+                                <li>Location:</li>
+                                <li>Yasamal,Baku</li>
+                                <li>Azerbaijan</li>
+                            </ul>
+                        </div>
+                        <div class="center">
+                            <button class="btn waves-effect waves-light only-xl">
+                                <i class="material-icons left hide-on-med-only hide-on-large-only">message</i>
+                                Message me</button>
+                            <br><br>
+                        </div>  
+                    </div>
+
+
+                </div>
+                <div class="col s12  z-depth-2 " id="tutor_face">
+                    <div class=" col s12 m12 l4 xl4 ">
+                        <div class="col s6  m6 l12">
+                            <br class="show-on-large">
+
+                            <img id = "tutor_photo" class="responsive-img " src="talek.jpg" alt="">
+                        </div>
+                        <div class="col s6 m5 offset-m1 l12 center hide-on-large-only">
+                            <br class="hide-on-large-only">
+                            <h5 class="" >Taleh Verdiyev</h5>
+                            <div class="">
+                                <i class="material-icons orange-text ">star</i> 4.2
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col s12 m7 l5">
+
+                        <div class="col s12 ">
+                            <div class="col s4 m5 offset-m1 l12 center hide-on-med-and-down">
+                                <h5 class="" >Taleh Verdiyev</h5>
+                                <i class="material-icons orange-text ">star</i> 4.2
+                            </div>
+
+                            <ul>
+                                <li><b>Expertise:</b> <span class="card">Algebra</span> <span class="card">Geometry</span> </li>
+                                <li>
+                                    <b>Experience:</b> Lorem ipsum dolor sit amet.
+                                </li>
+                                <li ><b>Bio: </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis mollitia quibusdam ad ex </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <br class="show-on-large">
+                    <div class="card col s12 m5 l3 right ">
+
+                        <div class="center"><h5>Price:
+                            <b>6$/ho</b>
+                            </h5></div>
+                        <div class="center">
+                            <ul>
+                                <li>Location:</li>
+                                <li>Guneshli,Baku</li>
+                                <li>Azerbaijan</li>
+                            </ul>
+                        </div>
+                        <div class="center">
+                            <button class="btn waves-effect waves-light only-xl">
+                                <i class="material-icons left hide-on-med-only hide-on-large-only">message</i>
+                                Message me</button>
+                            <br><br>
+                        </div>  
+                    </div>
+
+
+                </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+
+
+
+        <div class="container">
+            <div class="s12 center ">
                 <ul class="pagination">
                     <li class="disabled"><a href="#!"><i class="material-icons t">chevron_left</i></a></li>
                     <li class="active black"><a href="#!">1</a></li>
@@ -275,46 +408,43 @@
                     <li class="waves-effect"><a href="#!">5</a></li>
                     <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
                 </ul></div>
-          </div>
-      
-      <footer class="page-footer black">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
+        </div>
+
+        <footer class="page-footer black">
             <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Footer Content</h5>
+                        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Links</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2018 Copyright Text
+                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                </div>
+            </div>
         </footer>
-      
-      
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-      <script>
-          
-          $(document).ready(function(){
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+        <script>
+
+            $(document).ready(function(){
                 $('select').formSelect();
             });
-          $('select').on('contentChanged', function() {
-  $(this).material_select();
-});
-          
+            $('select').on('contentChanged', function() {
+                $(this).material_select();
+            });
+
         </script>
     </body>
-  </html>
+</html>
