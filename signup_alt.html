@@ -21,21 +21,21 @@
             <br>
             <div class="col s11 offset-s1  m5 offset-m3 l6 offset-l4 xl6 offset-xl4">
 
-                <img src="logo.png" alt="" class="col s3 m4 l3 xl2 "><h4 class="" style="font-size:35px; line-height:1px ">Master Me</h4>
+                <img src="logo.png" alt="" class="col s3 m4 l3 xl2 "><h4 class="" style="font-size:35px; line-height:1px ">MasterMe</h4>
             </div>
             <div class="center col s12 l6 offset-l3"><a  href="#"> Have an account? Log In</a></div>
             <div class="col s12 l10 offset-l1 xl8 offset-xl2">
                 <div class="col s12 m6 l7">
-                    <form class="col s12">
+                    <form class="col s12" action="sign.php" method="post">
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="name" type="text" >
+                                <input id="name" type="text" name="firstName" >
                                 <label for="name">Name</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="surname" type="text" >
+                                <input id="surname" type="text" name="lastName" >
                                 <label for="surname">Surname</label>
                             </div>
                         </div>
@@ -43,20 +43,22 @@
 
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="email" type="email" class="validate">
+                                <input id="email" type="email" class="validate" name="email">
                                 <label for="email">Email</label>
                             </div>
                         </div>
                         <div class="row">
 
                             <div class="input-field col s12">
-                                <input id="password" type="password" class="validate">
+                                <input id="password" type="password" class="validate" name="password">
 
                                 <label for="password">Password</label>
                             </div>
                         </div>
 
-                         <button class="col s12 m6 offset-m3 btn lighten-1 center " style="border-radius: 30px; background-color:#49c5b6;">Sign Up</button>
+                         <button type="submit" name="submitT" class="col s12 m6 offset-m3 btn lighten-1 center " style="border-radius: 30px; background-color:#49c5b6;">Sign Up as Tutor</button>
+						 <br></br>
+						 <button type="submit" name="submitSt" class="col s12 m6 offset-m3 btn lighten-1 center " style="border-radius: 30px; background-color:#49c5b6;">Sign Up as Studen</button>
                         <br class="hide-on-small-only"><br class="hide-on-small-only"><br class="hide-on-small-only"><br class="hide-on-small-only">
                     </form>
 
