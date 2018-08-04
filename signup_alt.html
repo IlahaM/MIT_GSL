@@ -4,6 +4,7 @@
         <!--Import Google Icon Font-->
 
         <link rel="stylesheet" src="main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--Import materialize.css-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
@@ -14,15 +15,17 @@
 
     </head>
 
-    <body>
+    <body class="grey lighten-4">
         <br><br><br>
-        <div class=" container row grey lighten-2">
+        <div class=" container row white z-depth-4 ">
             <br>
-            <h3 class="center">Sign Up
-            </h3>
-            <p class="center"><a  href="#">Have an account ? Login</a></p>
-            <div class="col s12 l10 offset-l1">
-                <div class="col s12 m12 l7">
+            <div class="col s11 offset-s1  m5 offset-m3 l6 offset-l4 xl6 offset-xl4">
+
+                <img src="logo.png" alt="" class="col s3 m4 l3 xl2 "><h4 class="" style="font-size:35px; line-height:1px ">Master Me</h4>
+            </div>
+            <div class="center col s12 l6 offset-l3"><a  href="#"> Have an account? Log In</a></div>
+            <div class="col s12 l10 offset-l1 xl8 offset-xl2">
+                <div class="col s12 m6 l7">
                     <form class="col s12">
                         <div class="row">
                             <div class="input-field col s12">
@@ -48,34 +51,41 @@
 
                             <div class="input-field col s12">
                                 <input id="password" type="password" class="validate">
-                                
+
                                 <label for="password">Password</label>
                             </div>
                         </div>
 
-                        <button class="col s12 m6 offset-m3 btn-large grey center darken-1">Sign Up</button>
-                        <br class="hide-on-med-and-down"><br class="hide-on-med-and-down"><br class="hide-on-med-and-down"><br class="hide-on-med-and-down">
+                         <button class="col s12 m6 offset-m3 btn lighten-1 center " style="border-radius: 30px; background-color:#49c5b6;">Sign Up</button>
+                        <br class="hide-on-small-only"><br class="hide-on-small-only"><br class="hide-on-small-only"><br class="hide-on-small-only">
                     </form>
 
 
                 </div>
 
-                <div class="col s12 m12 l4 offset-l1 center ">
-                  <hr class="hide-on-med-and-up">
-                   <h5>Or Sign Up using:</h5>
+
+                <div class="col s12 m4 offset-m1 l4 offset-l1 ">
                     <br>
-                    <div class="row">
-                        <br class="hide-on-large-only">
-                        <button class="btn-large white orange-text s5">Google+</button>  
-                        <br class="hide-on-med-and-down"><br class="hide-on-med-and-down">
-                        <button class="btn-large blue darken-3 s5 ">Facebook</button>
+                    <div class="row center">
+                        <hr class="hide-on-med-and-up">
+                        <br class="hide-on-small-only"><br class="hide-on-small-only">
+                        <br class="hide-on-small-only">
+                        <h5>or Sign Up with:</h5>
+                        <br class="hide-on-med-and-down">
+                        <button class="btn-large orange darken-3 s5 white-text">
+                            <i class="fab fa-google-plus-g left"></i>
+
+                            Google+</button>  
+
+                        <br class=""><br class="">
+                        <button class="btn-large blue    darken-3 s5 12">
+                            <i class="fab fa-facebook-f left "></i><span class="blue-text text-darken-3">...</span>Facebook  </button>
 
                     </div>
-                    <br>
+
                 </div>
 
             </div>
-
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
