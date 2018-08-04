@@ -1,63 +1,93 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="profile.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+      <link rel = "stylesheet"
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+         <link rel = "stylesheet"
+         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    
+      
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+      
+       <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+          
+
+
+
+    
+       
+    
+        
+         <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+     
+       
     
         <title>
     User Profile
     </title>
+        <script>
+           $(".button-collapse").sideNav();
+       </script>
     </head>
 
     <body>
-    <div class ="menu" id="logo">
-        <div class = "menu1">
-         <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_trulli"> <img src="log.webp" alt="Trulli" width="30%" height="5%"></a> 
-        </div>
+    
+     
+         <div class="navbar-fixed">
+       <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo" style="padding-left:5%;">Logo</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down" style="margin-right:2%;">
+        <li><a href="sass.html">Sign up</a></li>
+        <li><a href="badges.html">Login</a></li>
         
-      <div class = "menu1">
-        <form action="">
-            
-      <input type="text" placeholder="Search.." name="search" size="90%" id="search">
-      <button type="submit"><i>Search</i></button>
-           
-    </form>
-        </div>
-        
-        <div class="menu1">
-            <select name="lang" id="lang">
-           <option value="eng">eng</option>
-        <option value="az">az</option>
-                          <option value="rus">rus</option>
- </select>
-            </div>
-       <div class = "menu1">
-        <button id="sign">Sign Up</button>
-        </div>
-        
-        <div class = "menu1">
-        <button id="login">Login</button>
-        </div>
+      </ul>
+    </div>
+  </nav>
+    
+      
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">Sign up</a></li>
+    <li><a href="badges.html">Login</a></li>
+    
+  </ul>
         
         </div>
+        
         
         <div class="container">
-        <div class="card">
-  <img src="pp.png" id ="profileimg">
-    
-<p>4 start out of </p>
-
-
-  <p class="title">Azerbaijan,Baku,Nizami</p>
-  <p>8 AZN per hour</p>
-          <button id="msg">Mesaj yaz</button>  
-
-               <div class="contact">
-               <strong>Mail: </strong> <a href="mailto:webmaster@example.com">abc@gmail.com</a><br>
-                <strong>elefon: </strong> <a href="tel:">+9947904567</a>
-            </div>  
-             
-           
+        
+            
+            <div class="card">
+  <div class="card-header">
+    <img src="https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1501700554000/photosp/262671e7-cb17-4ee1-8f5a-26f766c4a855/stock-photo-diverse-teacher-mentor-smiling-man-middle-school-educator-school-room-male-teacher-262671e7-cb17-4ee1-8f5a-26f766c4a855.jpg" />
+      <div style="text-align: center; margin-top: 4%;">
+      <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+      </div>
+  </div>
+  <div class="card-content">
+    <h3>Name Surname</h3>
+    <h4>Baku,Azerbaijan,Nizami</h4>
+    <p>80$ per hour</p>
+  </div>
+  <div class="card-footer" >
+<h3 style="text-align: center;">Contacts</h3>
+     <p style="text-align: center;"><a href="">+9947077070</a></p>
+      <p  style="text-align: center;"><a>tutor@gmail.com</a> </p>
+  </div>
 </div>
-             
             
         
         <div class="info">
@@ -86,27 +116,20 @@
             
         </div>
             
-           <div class="video">
-             <video width="70%" controls>
+           
+             <video width="27%" controls style="margin-top: 3%;">
   <source src="" type="video/mp4">
   <source src="" type="video/ogg">
   Your browser does not support HTML5 video.
                  
 </video> 
-               <img src="sc.webp" id="scimg">
-            </div> 
+               
+            
          
 
         </div>
+          
         
-        
-        <a name="bot">
-         <div class="posts">
-            <textarea rows="15" cols="90" id="post"></textarea>
-             <!--<script src="//www.powr.io/powr.js?external-type=html"></script> 
- <div class="powr-reviews" id="f2cb1d01_1532120645"></div>-->
-             <textarea rows="15" cols="90" id="post2"></textarea>
-            </div>   
-        
+    
  </body>
 </html>
