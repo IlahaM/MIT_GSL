@@ -1,11 +1,43 @@
 .nav-wrapper{
-    background-color: white;
+    background-color:white;
 }
 nav .brand-logo,nav ul li a{
-    color: #49c5b6;
+    color: #339BFF;
 }
 nav ul li a:hover{
-    background-color: #49c5b6;
+    background-color: ;
+    color: white;
+}
+hr{
+    margin-top:6%;
+    margin-bottom: 5%;
+}
+h2{
+    text-align: center;
+}
+
+footer .row{
+    border-top: 1px solid #339BFF;
+    border-bottom: none;
+
+}
+.f{
+    background-color: lightgray;
+}
+
+
+.nav-wrapper{
+    background-color: white;
+}
+.custom-nav {
+    box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+}
+nav .brand-logo,nav ul li a{
+    color: #339BFF;
+}
+nav ul li a:hover{
+    background-color: baby blue;
     color: white;
 }
 
@@ -13,5 +45,58 @@ h2{
     text-align: center;
 }
 .navbar-fixed{
-    border: 2px solid #49c5b6;
+    border: 2px solid #339BFF;
+}
+
+.container{
+    
+}
+nav.row {
+    box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+}
+.categories-container {
+    background: #fff;
+    position: relative;
+    bottom: 235px;
+    border-radius: 10px;
+}
+
+
+#home {
+   background: url(./home_back.png) no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container-home {
+    display: flex;
+    flex-direction: column;
+    
+}
+form {
+    display: flex;
+    
+}
+.logop{
+    padding-left: 3%; 
+    padding-top: 0.7%;
+}
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+.categori{
+    font-size: 50px;
+    color:white;
 }
