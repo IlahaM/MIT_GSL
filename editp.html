@@ -1,101 +1,48 @@
 <html>
    <head>
-      <title>Edit Profile</title>
-      <meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+      <title>Tutor Edit Page</title>
+    <link rel="stylesheet" type="text/css" href="editprofile.css">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel = "stylesheet"
          href = "https://fonts.googleapis.com/icon?family=Material+Icons">
-      <link rel = "stylesheet"
-         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
-      <script type = "text/javascript"
+      
+       
+       <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+       <script type = "text/javascript"
          src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
-      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
-          <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
-<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+       <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+          
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"> </script>
 <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
-<meta charset=utf-8 />
+
      <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
-        
-      </script>
-       <link rel="stylesheet" type="text/css" href="editprofile.css">
        
        
    </head>
    
    <body class = "">  
-     <!--  <div class ="menu" id="logo">
-        <div class = "menu1">
-         <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_trulli"> <img src="log.webp" alt="Trulli" width="30%" height="5%"></a> 
-        </div>
-        
-      <div class = "menu1">
-        <form action="">
-            
-      <input type="text" placeholder="Search.." name="search" size="90%" id="search" input-field col s6>
-     
-           
-    </form>
-        </div>
-        
-        <div class="menu1">
-            <select name="lang" id="lang">
-           <option value="eng">eng</option>
-        <option value="az">az</option>
-                          <option value="rus">rus</option>
- </select>
-            </div>
-       <div class = "menu1">
-        <button id="sign">Sign Up</button>
-        </div>
-        
-        <div class = "menu1">
-        <button id="login">Login</button>
-        </div>
-        
-        </div>-->
-       
-     <!-- <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Logo</a>     
     
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="sass.html"><i class="material-icons">
-                
-                </i></a></li>
-        <li><a href="sass.html">Sign up</a></li>
-        <li><a href="badges.html">Login</a></li>
-        
-      </ul>
-    </div>
-  </nav>-->
-       <nav class="row  ">
+      
+        <nav class="row  ">
             <div class="nav-wrapper light white darken-3 col s12 
                         m12 black-text " style="box-shadow: yellow;">
-                
-              <div class="">
-                    <a href="index.html" class="brand-logo col s4  offset-s3 m2 l2 xl2">
+                <div class="">
+                    <a href="#" class="brand-logo col s4  offset-s3 m2 l2 xl2">
                         <img class="" src="mainlogo.png" alt="">
                     </a>
                    
                 </div>
-                
-                
-                
                 <ul id="nav-mobile" class="right hide-on-small-only">
-                    <li><a href="signup_alt.html"><button class="btn green lighten waves-effect waves-light" style="border-radius: 50px;">Sign Up</button></a></li>
-                    <li><a href="login_alt.html"><button class="btn white black-text  darken-1 waves-effect waves-light " style="border-radius: 60px;">Login</button></a></li>
+                    <li><a href="#"><button class="btn green lighten waves-effect waves-light" style="border-radius: 50px;">Sign Up</button></a></li>
+                    <li><a href="#"><button class="btn white black-text  darken-1 waves-effect waves-light " style="border-radius: 60px;">Login</button></a></li>
                 </ul>
             </div>
 
         </nav>
-
        
        
-       
-       
-      
-      <div class = "row">
-         <form class = "col s12" action="editp.php" method="post">
-		 <div class = "container">
+       <div class = "container">
         <div class="prof">
             
               <div class="text-center">
@@ -110,32 +57,38 @@
 
        </div>
        
+       
+       
+       
+      
+      <div class = "row">
+         <form class = "col s12">
             <div class = "row">
                <div class = "input-field col s6">
                   <i class = "material-icons prefix">account_circle</i>
                   <input placeholder = "Username" value = "" id = "name"
                      type = "text" class = "active validate" required />
-                  <label for = "name">Name Surname</label>
+                  <label for = "name" style="color:black;">Name Surname</label>
                </div>
                
                <div class = "input-field col s6">      
-                  <label for = "name">Education</label>
+                  <label for = "name" style="color:black;">Education</label>
                   <input id = "comments" type = "text" placeholder = "Education"
-                    name="education" class = "validate" required />          
+                     class = "validate" required />          
                </div>
             </div>
              
              <div class = "row">
                <div class = "input-field col s6">
                   <input placeholder = "Email" value = "" id = "email"
-                    name="email" type = "email" class = "active validate" required />
-                  <label for = "email">Email</label>
+                     type = "email" class = "active validate" required />
+                  <label for = "email" style="color:black;">Email</label>
                </div>
                
                <div class = "input-field col s6">      
-                  <label for = "phone">Phone</label>
+                  <label for = "phone" style="color:black;">Phone</label>
                   <input id = "comments" type = "number" placeholder = "Phone"
-                    name="phone" class = "validate" required />          
+                     class = "validate" required />          
                </div>
             </div>
             
@@ -159,13 +112,13 @@
                <div class = "row">
                <div class = "input-field col s6">
                   <input placeholder = "Location" value = "" id = "searchTextField"
-                     type = "text" name="location" class = "active validate" required />
-                  <label for = "comments">Location</label>
+                     type = "text" class = "active validate" required/>
+                  <label for = "comments" style="color:black;">Location</label>
                </div>
                
                <div class = "input-field col s6">      
-                  <label for = "comments">Price</label>
-                  <input id = "comments" type = "number" name="price" placeholder = "Price"
+                  <label for = "comments" style="color:black;">Price</label>
+                  <input id = "comments" type = "number" placeholder = "Price"
                      class = "validate" required />          
                </div>
             </div>
@@ -201,8 +154,8 @@
             <div class = "row">
                <div class = "input-field col s12">
                   <i class = "material-icons prefix">mode_edit</i>
-                  <textarea id = "address" class = "materialize-textarea" name="bio" required></textarea>
-                  <label for = "address">Bio</label>
+                  <textarea id = "address" class = "materialize-textarea"></textarea>
+                  <label for = "address" style="color:black;">Bio</label>
                </div>
             </div>
              
@@ -210,8 +163,8 @@
             <div class = "row">
                <div class = "input-field col s12">
                   <i class = "material-icons prefix">mode_edit</i>
-                  <textarea id = "address" class = "materialize-textarea" name="expertise" required></textarea>
-                  <label for = "address">Expertise</label>
+                  <textarea id = "address" class = "materialize-textarea"></textarea>
+                  <label for = "address" style="color:black;">Expertise</label>
                </div>
             </div>
              
@@ -219,8 +172,8 @@
               <div class = "row">
                <div class = "input-field col s12">
                   <i class = "material-icons prefix">mode_edit</i>
-                  <textarea id = "address" class = "materialize-textarea" name="experience" required></textarea>
-                  <label for = "address">Experience</label>
+                  <textarea id = "address" class = "materialize-textarea"></textarea>
+                  <label for = "address" style="color:black;">Experience</label>
                </div>
             </div>
             
@@ -236,13 +189,13 @@
                <div class = "input-field col s12">
                   <p>Methodology: </p> 
                   <p>
-                     <input id = "group" type = "checkbox" name="group"/>
-                     <label for = "group">Group</label>
+                     <input id = "married" type = "checkbox" />
+                     <label for = "married">Group</label>
                   </p>
                   
                   <p>
-                     <input id = "indiv" type = "checkbox" name="indiv"/>
-                     <label for = "indiv">Individual</label>
+                     <input id = "single" type = "checkbox" class = "filled-in" />
+                     <label for = "single">Individual</label>
                   </p>
                   
                  
@@ -263,17 +216,77 @@
                         value = "female" />
                      <label for = "female">Female</label>
                   </p>
+                   
+                    <p>
+                     <input id = "other" type = "radio" name = "other"
+                        value = "other" />
+                     <label for = "other">Other</label>
+                  </p>
                   
                  
                </div>
-            </div>  
+            </div> 
+             
+             
+            <!-- <div class="">
+            
+             <form action="" name="submit">
+  <div id="submit-button" class="button">Submit</div>
+ 
+</form>
 
- <button class="waves-effect waves-light btn-large" type="submit" name="save">
-             Save
-             </button>			
+      
+       </div>-->
+             
+             <button class="waves-effect waves-light btn-large">
+             Submit
+             </button>
          </form>       
       </div>
             </div>
+       
+          <footer class = "page-footer" style="background-color: grey;">
+         <div class = "row">
+            <div class = "col s12 m6 l3" style="margin-left: 15%;">
+               <h5 class = "white-text">About us</h5>
+                <a href="#" class = "white-text">Our Team</a><br>
+                <a href="#" class = "white-text">Our Partners</a><br>
+                <a href="#" class = "white-text">Careers</a>
+            </div>
+             
+            
+            <div class = "col s12 m6 l3">
+                
+               <ul>
+                  <h5 class = "white-text">Follow us</h5>
+                 <li><a href='https://www.instagram.com/livingindiatv/' class="white-text">Instagram</a></li>
+<li><a href='https://in.pinterest.com/livingindiatv/'  class="white-text">Pinterest</a></li>
+<li><a href='https://twitter.com/livingindiatv'  class="white-text">Twitter</a></li>
+<li><a href='https://www.facebook.com/livingindiatv/'  class="white-text">Facebook</a></li>
+               </ul>
+            </div>
+             
+             
+              <div class = "col s12 m6 l3">
+                <ul>
+                  <h5 class = "white-text">Contact us</h5>
+                   <li><a href = "#!" class="white-text">Tel:+994701232323</a></li>
+                    <li><a href = "#!" class="white-text">tutor@tutor.com</a></li>
+                </ul>
+            </div>
+             
+             
+             
+             
+             
+         </div>
+         
+         <div class = "footer-copyright">
+            <div class = "container">
+               © 2018 Copyright Information
+            </div>
+         </div>         
+       </footer>
        
        <script>
        function readURL(input) {
@@ -411,5 +424,10 @@ var pollForFinished = function(_call, cb) {
 }
        
        </script>
+       
+  <script>
+       $(".button-collapse").sideNav();
+       </script>
+   
    </body>   
 </html>
