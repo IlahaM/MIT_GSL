@@ -1,10 +1,4 @@
-.menu1{
-    float: left;
-    margin-left: 3%;
-    padding-top: 1%;
-    
-    
-}
+
 
 body{
      /* background-image: url("student.jpg");
@@ -12,18 +6,13 @@ body{
     background-size: 100% 20%; */
    
     
-background-color: white;
+
     
 }
 
-input::-webkit-input-placeholder {
-    font-size: 18px;
-    
-}
 
-#check{
-    margin-left: 5.5%;
-}
+
+
 /**@media screen and (min-width: 480px) {
     body {
         background-color: lightgreen;
@@ -47,9 +36,6 @@ img{
     
 }
 
-#fenn{
-    
-}
 
 .form-control{
     border-style: ridge;
@@ -68,7 +54,7 @@ img{
     width: 60%;
     height: 5%;
     border-radius: 3px;
-    border-color: #00bfe7;
+        border-color: #00bfe7;
   
 }
 #profileimg{
@@ -87,7 +73,7 @@ img{
   border: none;
   outline: 0;
   display: table-footer-group;
-
+ 
  /** color: mistyrose; **/
  /** background-color: forestgreen; **/
   text-align: left;
@@ -101,25 +87,9 @@ img{
     margin-top: 40%;
     border-radius: 5px;
 }
-#search{
-    height: 5%;
-    margin-top: 1%;
-    
-}
- 
-#sign, #login{
-    background-color: #49c5b6;
-    border: none;
-    color: white;
-    padding: 15px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5%;
 
-}
+ 
+
 
 
 
@@ -127,32 +97,16 @@ img{
     margin-left: 4%;
     margin-right:4%;
 }
-#login{
-    padding: 15px 25px;
-}
 
 
-#nav-mobile{
-margin-right: 10%;    
-}
 
-.menu{
-     overflow: hidden;
-     box-shadow: 0 10px 11px -4px rgba(0, 0, 0, 0.2);
-    background-color: white;
-    margin-bottom: 13%;
-    margin-left: -24%;
-    margin-right: -24%;
-    
-   
-}
 
-.brand-logo{
-    margin-left:5%;
-}
+
+
+
 
 .container{
-    margin-top:4%;
+   margin-top: 3%;
 }
 h1{
     color: #00bfe7;
@@ -238,10 +192,7 @@ hr {
     margin-left: 9%;
    
 }
-#scimg{
-    margin-top: 2%;
-    width: 70%;
-}
+
 
 .posts{
     font-size: 14px;
@@ -318,10 +269,14 @@ p {
   font-family: "museo-sans-fontspring", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: #525252;
 }
+
 a {
   color: #00c7e4;
   text-decoration: none;
 }
+
+
+
 
 
 
