@@ -68,7 +68,7 @@ img{
     width: 60%;
     height: 5%;
     border-radius: 3px;
-        border-color: #00bfe7;
+    border-color: #00bfe7;
   
 }
 #profileimg{
@@ -87,7 +87,7 @@ img{
   border: none;
   outline: 0;
   display: table-footer-group;
-  paddin#49c5b6
+
  /** color: mistyrose; **/
  /** background-color: forestgreen; **/
   text-align: left;
@@ -121,10 +121,7 @@ img{
 
 }
 
-.nav-wrapper{
-    background-color: #49c5b6;
-    
-}
+
 
 .row{
     margin-left: 4%;
